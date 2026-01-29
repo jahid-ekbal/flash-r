@@ -1,0 +1,8 @@
+{
+  "bracketSameLine": true,
+  "experimentalTernaries": true,
+  "semi": true,
+  "singleAttributePerLine": true,
+  "useTabs": false,
+  "plugins": ["prettier-plugin-tailwindcss"]
+}
