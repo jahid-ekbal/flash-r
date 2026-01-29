@@ -1,5 +1,7 @@
 import Link from "next/link";
 import ThemeToggleButton from "../ThemeToggleButton";
+import { InputGroup, InputGroupAddon, InputGroupInput } from "../shadcnui/input-group";
+import { SearchIcon } from "lucide-react";
 
 const Header = () => {
   return (
@@ -11,14 +13,24 @@ const Header = () => {
           <h1
             className="text-2xl font-semibold"
             aria-label="App Name">
-            NSP App
+            FLASH R
           </h1>
         </Link>
 
         <nav className="flex items-center gap-4">
           <Link href={"/"}>Home</Link>
+          <Link href={"/"}>ISO</Link>
+          <Link href={"/"}>About</Link>
 
-          <ThemeToggleButton />
+          
+          <InputGroup className="max-w-xs">
+      <InputGroupInput placeholder="Search..." />
+      <InputGroupAddon>
+        <SearchIcon />
+      </InputGroupAddon>
+      <InputGroupAddon align="inline-end">12 results</InputGroupAddon>
+    </InputGroup>
+    <ThemeToggleButton />
         </nav>
       </div>
     </header>
