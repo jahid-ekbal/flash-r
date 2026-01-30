@@ -1,8 +1,8 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Nextjs Starter Frontend",
-  description: "Production grade Next.js starter template",
+  title: "About this tool",
+  description: "OS bootable pendrive creation tool",
 };
 
 const page = () => {
