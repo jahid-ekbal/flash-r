@@ -19,8 +19,8 @@ const Header = () => {
 
         <nav className="flex items-center gap-4">
           <Link href={"/"}>Home</Link>
-          <Link href={"/"}>ISO</Link>
-          <Link href={"/"}>About</Link>
+          <Link href={"/iso"}>ISO</Link>
+          <Link href={"/about"}>About</Link>
 
           
           <InputGroup className="max-w-xs">
