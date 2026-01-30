@@ -1,5 +1,7 @@
 import Link from "next/link";
 import ThemeToggleButton from "../ThemeToggleButton";
+import { InputGroup, InputGroupAddon, InputGroupInput } from "../shadcnui/input-group";
+import { SearchIcon } from "lucide-react";
 
 const Header = () => {
   return (
@@ -20,7 +22,15 @@ const Header = () => {
           <Link href={"/iso"}>ISO</Link>
           <Link href={"/about"}>About</Link>
 
-          <ThemeToggleButton />
+          
+          <InputGroup className="max-w-xs">
+      <InputGroupInput placeholder="Search..." />
+      <InputGroupAddon>
+        <SearchIcon />
+      </InputGroupAddon>
+      <InputGroupAddon align="inline-end">12 results</InputGroupAddon>
+    </InputGroup>
+    <ThemeToggleButton />
         </nav>
       </div>
     </header>
