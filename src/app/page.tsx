@@ -1,17 +1,37 @@
+import { Card, CardContent, CardFooter, CardHeader } from "@/components/shadcnui/card";
+import { InputGroupAddon, InputGroupButton, } from "@/components/shadcnui/input-group";
+import { Separator } from "@/components/shadcnui/separator";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Nextjs Starter Frontend",
-  description: "Production grade Next.js starter template",
+  title: "FLASH R",
+  description: "Welcome to FLASH R - Your Ultimate Resource Hub",
 };
 
 const page = () => {
   return (
     <section className="grid h-[90dvh] place-items-center">
-      <div className="space-y-2 text-center">
-        <h1 className="text-5xl font-semibold">Nextjs Starter Frontend</h1>
-        <h2 className="text-3xl">Production grade Next.js starter template</h2>
-      </div>
+     <Card className="pb-30 w-[90vw] max-w-3xl">
+      <CardHeader className=" font-extrabold fill-black text-center">FLASH R</CardHeader>
+      <Separator />
+      <CardContent>
+
+
+
+      </CardContent>
+        <CardFooter className="flex flex-col gap-4">
+         
+
+        <InputGroupAddon>
+
+               <InputGroupButton>Go</InputGroupButton>
+               <InputGroupButton>Stop</InputGroupButton>
+
+          </InputGroupAddon>
+
+       </CardFooter>
+
+     </Card>
     </section>
   );
 };
